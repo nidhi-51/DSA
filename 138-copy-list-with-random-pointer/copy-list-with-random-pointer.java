@@ -18,7 +18,7 @@ class Solution {
         if(head == null){
             return null;
         }
-        // clone node add
+        // Step 1: clone node add
         Node temp = head;
         while(temp != null){
             Node cloneNode = new Node(temp.val);
@@ -26,7 +26,7 @@ class Solution {
             temp.next = cloneNode;
             temp = cloneNode.next;
         }
-        // copy random pointers
+        // Step 2: copy random pointers
         temp = head;
         while(temp != null){
             Node oldNode = temp;
