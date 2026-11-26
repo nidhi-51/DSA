@@ -1,8 +1,8 @@
 class Solution {
     public int maxAbsoluteSum(int[] nums) {
-        if(nums.length <= 1){
-            return Math.abs(nums[0]);
-        }
+        // if(nums.length <= 1){
+        //     return Math.abs(nums[0]);
+        // }
         int maxSum = nums[0];
         int minSum = nums[0];
         int ans  = Math.abs(nums[0]);
